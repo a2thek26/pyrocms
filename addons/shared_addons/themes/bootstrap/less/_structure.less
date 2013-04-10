@@ -1,0 +1,55 @@
+/**
+ * ---------------------------------
+ * THE BODY TAG & GLOBALS
+ * ---------------------------------
+ */
+body.body-buffer { padding-top:@baseLineHeight * 3; }
+h2 { line-height:26px; }
+input,
+textarea { .input-block-level(); }
+.btn { text-transform:uppercase}
+.big { font-size:1.1em; }
+.bigger { font-size:1.5em; line-height:1.1em; }
+.biggest { font-size:2em; line-height:1.1em; }
+
+/**
+ * ---------------------------------
+ * HEADER
+ * Anything within <header></header>
+ * ---------------------------------
+ */
+header .navbar .navbar-inner {  }
+header .navbar .brand {  }
+header .navbar .main-nav > li > a {  }
+
+/**
+ * ---------------------------------
+ * MAIN
+ * Stuff within .main
+ * ---------------------------------
+ */
+.frame { padding:@baseLineHeight; }
+.thumbnails .thumbnail { display:inline-block; .ie7-inline-block(); padding:4px; }
+.thumbnails .thumbnail h3 a { display:block; }
+
+/**
+ * ---------------------------------
+ * FOOTER
+ * Yes, the footer...
+ * ---------------------------------
+ */
+footer { padding:@baseLineHeight 0; }
+
+/**
+ * ---------------------------------
+ * STICKY FOOTER
+ * Make the footer stick to bottom of window
+ * ---------------------------------
+ */
+
+// html, body { height:100%; }
+// #wrap { min-height:100%; height:auto !important; height:100%; margin:0 auto -140px; }
+// #push, footer { height:@stickyFooterHeight; }
+// @media (max-width: 767px) {
+//   footer { margin-left:-20px; margin-right:-20px; padding-left:20px; padding-right:20px; }
+// }

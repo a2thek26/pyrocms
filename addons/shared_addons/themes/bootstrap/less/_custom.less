@@ -1,0 +1,34 @@
+
+
+/**
+ * ---------------------------------
+ * RESPONSIVE
+ * All responsive media queries
+ * ---------------------------------
+ */
+
+// Large desktops
+@media (min-width: 1200px) {
+
+}
+
+// Tablets to regular desktops
+@media (min-width: 768px) and (max-width: 979px) {
+  body { padding-left:0; padding-right:0; }
+  header .navbar .nav > li > a { padding:@baseLineHeight; }
+}
+
+// Phones to portrait tablets and narrow desktops
+@media (max-width: 767px) {
+  body { padding-left:0 !important; padding-right:0 !important; }
+  body.body-buffer { padding-top:0; padding-bottom:0; }
+  header .navbar-fixed-top { margin-bottom:0; }
+  header .navbar .nav > li > a { border:none !important; padding:@baseLineHeight; }
+  header .navbar .brand { border:none; }
+  h1,h2,h3,h4,h5,h6 { text-align:left; }
+  .big, .bigger, .biggest { font-size:1em; line-height:1em; }
+  .container { margin-left:0; margin-right:0; }
+  .hero-unit { padding:@baseLineHeight; }
+
+
+}

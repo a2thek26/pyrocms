@@ -1,0 +1,39 @@
+/*
+ * ---------------------------------
+ * EIM LESS FRAMEWORK
+ * This is how we do it (for now)
+ * ---------------------------------
+ * @author Adam Kelsven 
+ *
+ * NOTES:
+ * All less files used in the framework are loaded here. If you want to NOT include something,
+ * just comment it out in this file or in bootstrap/bootstrap.less which handles loading all 
+ * bootstrap related assets.
+ *
+ * - Global variables are loaded first so they are usable in ALL less files
+ * - Helpers/mixins are loaded next
+ * - Structure is loaded to handle any of the layout settings (ie. width:420px; padding:20px; )
+ * - Styles compliment the structure and will have things more related "fluff" (ie. color:#ff0; )
+ * - Custom is the 'catch-all'. Imagine a place where you can put all of your page dwiddlies.
+ *
+ *    Example:
+ *    
+ *    .widget.that-one { width:300px; background-image:url(butt.png); padding:12px; };
+ *
+ * This compiles down to framework.css. From there, the only css file that is reference in the
+ * template is website.css because it loads any external font references and framework.css (ala Scott Trsar).
+ *
+ * Nested elements are used in instances where it makes sense instead of duplicating selectors over and over.
+ *
+ * WARNING:
+ * Any styling done in any css file will be overwritten the next time LESS is compiled. 
+ * So, do ALL styling in .less files.
+ */
+
+@import "_variables.less";
+@import "bootstrap/bootstrap.less";
+@import "_helpers.less";
+@import "_structure.less";
+@import "_styles.less";
+@import "_custom.less";
+@import "_responsive.less";

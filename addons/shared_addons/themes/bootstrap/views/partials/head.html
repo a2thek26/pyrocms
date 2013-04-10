@@ -1,0 +1,38 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js" lang="en">           <![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{{ settings:site_name }} &rarr; {{ template:title }}</title>
+
+  <meta name="author" content="Adam Kelsven">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  {{ theme:favicon file="favicon.ico" }}
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  
+  <base href="{{ url:base }}"/>
+
+  <!-- Guess we better help IE out -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+      
+  {{ theme:css file="website.css" }}
+
+  {{ theme:js file="libs/jquery-1.9.1.js" }}
+  {{ theme:js file="libs/jquery.easing.1.3.js" }}
+  {{ theme:js file="libs/jquery.dataSelector.js" }}
+  {{ theme:js file="libs/bootstrap.min.js" }}
+  {{ theme:js file="control.js" }}
+</head>
+
+<body id="{{ url:segments segment="1" default="home" }}" {{ if theme:options:navigation_layout == 'navbar-fixed-top' }} class="body-buffer" {{ endif }}>

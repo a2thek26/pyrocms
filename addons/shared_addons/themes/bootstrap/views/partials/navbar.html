@@ -1,0 +1,37 @@
+<header>
+  <div class="container">
+    <div class="navbar {{ theme:options:navigation_layout }} {{ if theme:options:inverted_nav == 'yes' }}navbar-inverse{{ endif }}">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+         
+          <a class="brand" href="{{ url:site }}">{{ settings:site_name }}</a>
+
+          <div class="nav-collapse collapse">
+            <ul class="main-nav nav">
+              {{ navigation:links group="header" }}
+              {{#adds class defined in navigation, check current page against uri, and if there are children#}}
+              <li class="{{ class }} {{ if url == {page:uri} }} {{ current }}{{ endif }} {{ if children }} dropdown {{ endif }}">
+                {{ if children }}
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">{{ title }} <b class="icon-chevron-down"></b></a>
+                <ul class="dropdown-menu">
+                {{ children }}
+                  <li><a href="{{ url }}">{{ title }}</a></li>
+                {{ /children }}
+                </ul>
+                {{ else }}
+                <a href="{{ url }}">{{ title }}</a>
+                {{ endif }}
+              </li>
+              {{ /navigation:links }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
