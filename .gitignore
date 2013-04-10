@@ -3,6 +3,8 @@
 .project
 .settings
 .idea
+*.sublime-workspace
+*.sublime-project
 assets/cache/*
 assets/page_types/*
 !assets/page_types/.htaccess
@@ -17,3 +19,5 @@ nbproject/
 uploads/*
 tests/
 
+addons/shared_addons/themes/*
+!addons/shared_addons/themes/bootstrap
