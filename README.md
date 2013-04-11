@@ -6,7 +6,7 @@
 * [Documentation](https://www.pyrocms.com/support/documentation)
 * [License](http://pyrocms.com/legal/license)
 * [Forums](http://forum.pyrocms.com)
-* Version: 2.2.0-rc2
+* Version: 2.2.0
 
 ## Team
 
