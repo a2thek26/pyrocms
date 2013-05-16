@@ -16,13 +16,36 @@
 
 /**
  * ---------------------------------
+ * FRAMING
+ * Stuff to help with structure
+ * ---------------------------------
+ */
+.padding-sides(@padding:20px) {
+  padding-left:@padding;
+  padding-right:@padding;
+}
+.padding-caps(@padding:20px) {
+  padding-top:@padding;
+  padding-bottom:@padding;
+}
+.margin-sides(@margin:20px) {
+  margin-left:@margin;
+  margin-right:(@margin);
+}
+.margin-caps(@margin:20px) {
+  margin-top:@margin;
+  margin-bottom:(@margin);
+}
+
+/**
+ * ---------------------------------
  * SHADOWS
  * Mixin for consistent shadows
  * ---------------------------------
  */
 .shadowDown() {
-  .box-shadow(0 2px 20px @shadowOnLight)
+  .box-shadow(0 2px 10px @shadowOnLight)
 };
 .shadowUp() {
-  .box-shadow(0 -2px 20px @shadowOnLight)
+  .box-shadow(0 -2px 10px @shadowOnLight)
 };
